@@ -43,10 +43,12 @@ public class ProfessorBehavior : MonoBehaviour
         anim.ResetTrigger("toWrite");
     }
 
-    IEnumerator GenerateChalkboardText() {
-        // Placeholder avant intégration GPT
-        boardText.text = "Calcul en cours...";
-        yield return new WaitForSeconds(1f);
-        boardText.text = "Flemmmme";
+    IEnumerator GenerateChalkboardText()
+    {
+        boardText.text = "Génération IA…";
+        yield return StartCoroutine(
+            FindObjectOfType<GPTService>()
+                .GetChalkboardText(result => boardText.text = result)
+        );
     }
 }
