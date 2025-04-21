@@ -18,7 +18,7 @@ public class ProfessorBehavior : MonoBehaviour
         StartCoroutine(TeachRoutine());
     }
 
-    IEnumerator TeachRoutine() {
+    public IEnumerator TeachRoutine() {
         // 1. Aller au tableau
         anim.SetTrigger("toWalk");
         while (Vector3.Distance(transform.position, boardTransform.position) > 0.1f) {
