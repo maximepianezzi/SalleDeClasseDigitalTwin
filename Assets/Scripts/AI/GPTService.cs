@@ -5,7 +5,7 @@ using Newtonsoft.Json.Linq;
 
 public class GPTService : MonoBehaviour
 {
-    [Header("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")]
+    [Header("Renseignez votre clé API OpenAI")]
     [SerializeField] private string apiKey;
 
     private const string endpoint = "https://api.openai.com/v1/chat/completions";
