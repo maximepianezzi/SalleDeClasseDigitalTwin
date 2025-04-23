@@ -19,7 +19,7 @@
     <RootNamespace></RootNamespace>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
     <TargetFramework>netstandard2.1</TargetFramework>
     <BaseDirectory>.</BaseDirectory>
   </PropertyGroup>
@@ -54,7 +54,7 @@
     <UnityProjectGenerator>Package</UnityProjectGenerator>
     <UnityProjectGeneratorVersion>2.0.22</UnityProjectGeneratorVersion>
     <UnityProjectGeneratorStyle>SDK</UnityProjectGeneratorStyle>
-    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityProjectType>GamePlugins:3</UnityProjectType>
     <UnityBuildTarget>StandaloneOSX:2</UnityBuildTarget>
     <UnityVersion>2022.3.14f1</UnityVersion>
   </PropertyGroup>
@@ -64,70 +64,52 @@
     <Analyzer Include="/Applications/Unity/Hub/Editor/2022.3.14f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventHandler.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeA.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_ExampleScript_01.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMPro_InstructionOverlay.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeB.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/DropdownSample.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexColorCycler.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/EnvMapAnimator.cs" />
-    <Compile Include="Assets/Scripts/ProfessorBehavior.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextSelector_A.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01_UGUI.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/SimpleScript.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark04.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ChatController.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ObjectSpin.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_PhoneNumberValidator.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexJitter.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_DigitValidator.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_FrameRateCounter.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextConsoleSimulator.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TeleType.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventCheck.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_UiFrameRateCounter.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshSpawner.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexZoom.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark02.cs" />
-    <Compile Include="Assets/Scripts/IoTManager.cs" />
-    <Compile Include="Assets/Scripts/AI/GPTService.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextSelector_B.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/SkewTextExample.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/WarpTextExample.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshProFloatingText.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ShaderPropAnimator.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/CameraController.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark03.cs" />
-    <Compile Include="Assets/Scripts/UI/UIController.cs" />
-    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextInfoDebugTool.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />
-    <None Include="Assets/TextMesh Pro/Examples &amp; Extras/Fonts/Oswald-Bold - OFL.txt" />
-    <None Include="Assets/TextMesh Pro/Examples &amp; Extras/Fonts/Anton OFL.txt" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader" />
-    <None Include="Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader" />
-    <None Include="Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" />
-    <None Include="Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" />
-    <None Include="Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_Sprite.shader" />
-    <None Include="Assets/TextMesh Pro/Examples &amp; Extras/Fonts/Bangers - OFL.txt" />
+    <Compile Include="Assets/Plugins/M2Mqtt/Net/Fx.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/WinRT/MqttNetworkChannel.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/WinRT/Fx.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/Net/MqttNetworkChannel.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/WinRT/Hashtable.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/Exceptions/MqttCommunicationException.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/WinRT/Queue.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/Messages/MqttMsgPublishEventArgs.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/Messages/MqttMsgPubrel.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/Messages/MqttMsgPublishedEventArgs.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/Messages/MqttMsgConnectEventArgs.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/Messages/MqttMsgUnsubscribe.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/Messages/MqttMsgUnsubscribedEventArgs.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/Messages/MqttMsgBase.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/Messages/MqttMsgConnack.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/Messages/MqttMsgPublish.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/Messages/MqttMsgUnsuback.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/Messages/MqttMsgContext.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/Utility/Trace.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/Internal/InternalEvent.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/Utility/QueueExtension.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/Exceptions/MqttConnectionException.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/Session/MqttClientSession.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/Session/MqttSession.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/Exceptions/MqttTimeoutException.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/Messages/MqttMsgPubcomp.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/Properties/AssemblyInfo.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/Messages/MqttMsgUnsubscribeEventArgs.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/Messages/MqttMsgPubrec.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/Messages/MqttMsgPingReq.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/Internal/MsgInternalEvent.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/Messages/MqttMsgSuback.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/Messages/MqttMsgPingResp.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/Messages/MqttMsgDisconnect.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/Messages/MqttMsgSubscribeEventArgs.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/IMqttNetworkChannel.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/Messages/MqttMsgSubscribedEventArgs.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/Messages/MqttMsgSubscribe.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/MqttSettings.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/Session/MqttBrokerSession.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/MqttSecurity.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/Messages/MqttMsgConnect.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/Exceptions/MqttClientException.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/Messages/MqttMsgPuback.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/MqttClient.cs" />
+    <Compile Include="Assets/Plugins/M2Mqtt/Internal/MsgPublishedInternalEvent.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
